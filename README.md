@@ -1,3 +1,3 @@
 # Form
 ### Formulário criado para cadastro de novos estágiarios 
-Utilizando apenas HTML
+Formulário criado inteirmente em HTML, projeto feito para faculdade.
