@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="uft-8">
+	<title>Formulario para ingressantes das regioes sudeste, sul e centro oeste</title>
+</head>
+<body>
+	<h2>Formulário de Cadastro</h2>
+	<form method="post" id="fCadastro">
+	<fieldset id="usuario"><legend>INFORMAÇÕES DO CANDIDATO</legend>
+		<p> <label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="30" maxlength="40" placeholder="Nome Completo"/></p>
+		<p> <label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="30" maxlength="40"/></p>
+		<p> <label for="cSen">Senha:</label> <input type="password" name="tSen" id="cSen" size="17" maxlength="20" placeholder="20 dígitos máx"/></p>
+		<p> <label for="cCel">Celular:</label> <input name="tDDD" id="cDDD" type="text" size="1" maxlength="2" placeholder="DDD"/> <input type="text" name="tCel" id="cCel" size="9" maxlength="9" placeholder="Número"/> 
+			<label for="cWpp">Whatsapp?</label>
+				<input type="radio" name="tWpp" id="cSim" checked/><label for="cSim">Sim</label>
+				<input type="radio" name="tWpp" id="cNao"/><label for="cNao">Não</label>
+			</p> 
+		<p> <label for="cCpf">CPF:</label> <input type="text" name="tCpf" id="cCpf" size="12" maxlength="11" placeholder="xxx.xxx.xxx-x" /> </p>
+		<p> <label for="cNas">Nascimento:</label> <input type="date" name="tNas" id="cNas"/></p>
+			<fieldset id="sexo"><legend>Sexo:</legend>
+				<input type="radio" name="tSex" id="cMasc" checked/> <label for="cMasc">Masculino</label><br/>
+				<input type="radio" name="tSex" id="cFem"/> <label for="cFem">Feminino</label><br/>
+				<input type="radio" name="tSex" id="cOut"/> <label for="cFem">Outro</label><br/> 
+				<input type="text" name="tOutro" id="cOutro" placeholder="Caso outro escreva aqui"/>
+			</fieldset>                                                                                                               
+		<p> <label for="cSobre">Sobre voce</label><br> 
+			<textarea name="tSobre" id="cSobre" cols="110" rows="5" placeholder="Conte pra gente!"></textarea></p>
+	</fieldset>
+	
+	<fieldset id="endereco"><legend>ENDEREÇO DO CANDIDATO</legend>
+		<p> <label for="cCep">cep</label> <input type="text" name="tCep" id="cCep" size="10" maxlength="8" placeholder="xxxxx-xxx" /></p>
+		<p> <label for="cEstCand">estado</label>
+			<select name="tEstCand" id="cEstCand">
+				<optgroup label="Região Sudeste">
+					<option>Rio de Janeiro</option>
+					<option>Minas Gerais</option>
+					<option>São Paulo</option>
+					<option>Espirito Santo</option>
+				</optgroup>
+				
+				<optgroup label="Região Cento Oeste">
+					<option>Mato Grosso</option>
+					<option>Mato Grosso do Sul</option>
+					<option>Goias</option>
+					<option>Distrito Federal</option>
+				</optgroup>
+				
+				<optgroup label="Região Sul">
+					<option>Rio Grande do Sul</option>
+					<option>Parana</option>
+					<option>Santa Catarina</option>
+				</optgroup>
+			</select>	
+		</p>
+		<p> <label for="cCid">cidade</label> <input type="text" name="tCid" id="cCid" Size="17" maxlength="30" /></p>
+		<p> <label for="cRua">rua</label> <input type="text" name="tCid" id="cCid" Size="20" maxlength="30" /></p>
+	</fieldset>
+	
+	<fieldset id="ensino"><legend>ENSINO</legend> 
+		<p> <label for="cFacul">Faculdade</label> <input type="text" name="tFacul" id="cFacul" size="17" maxlength="50" /> </p>
+		<p> <label for="cEstFacul">Estado</label> <input type="text" name="tEstFacul" id="cEstFacul" size="20" maxlength="30" /> </p>
+		<p> <label for="cCurso">Curso</label> <input type="textt" name="tCurso" id="cCurso" size="35" maxlength="30" /> </p>
+		<p> <label for="cPerio">Periodo atual</label> 
+			<select>
+				<option>1°</option>
+				<option>2°</option>
+				<option>3°</option>
+				<option>4°</option>
+				<option>5°</option>
+				<option>6°</option>
+				<option>7°</option>
+				<option>8°</option>
+				<option>9°</option>
+				<option>10°</option>
+				<option>11°</option>
+				<option>12°</option>
+				<option>13°</option>
+				<option>14°</option>
+			</select>
+		</p>
+		<p> <label for="cInicio">Inicio</label> <input type="date" name="tInicio" id="cInicio"/> <label for="cConclu">Conclusão</label> <input type="date" name="tConclu" id="cConclu"/></p>  
+	</fieldset>
+	
+	<fieldset id="experienciaP"><legend>EXPERICIA PROFISSIONAL</legend>
+		<p> <label for="cEmp">empresa</label> <input type="text" name="tEmp" id="cEmp" size="20" maxlength="40"/></p>
+		<p> <label for="cCargo">cargo</label> <input type="text" name="tEmp" id="cEmp" size="22" maxlength="40"/></p>
+		<p> <label for="cEntrada">Entrada</label> <input type="date" name="tEntrada" id="cEntrada"/> <label for="cSaida">Saída</label> <input type="date" name="tSaida" id="cSaida"/></p>
+		<p> <label for="cDesc">Descrição</label><br> 
+			<textarea name="tDesc" id="cDesc" cols="110" rows="5" ></textarea></p>
+	</fieldset>
+	
+	<fieldset id="conhecimentos"><legend>CONHECIMENTOS</legend>
+	<!-- em linguagem fazer caixa de marcar para o usuario selecionar as linguganes que ele sabe--> 
+		<p> <label for="cLing">linguagem de programação:</label> 
+			<input type="checkbox" name="tPy" id="cPy">
+			<label for="python">Python</label>
+
+			<input type="checkbox" name="tJavaS" id="cJavaS">
+			<label for="java">JavaScript</label>
+
+			<input type="checkbox" name="tPhp" id="cPhp">
+			<label for="php">PHP</label>
+
+			<input type="checkbox" name="tSharp" id="cSharp">
+			<label for="csharp">C#</label>
+
+			<input type="checkbox" name="tGo" id="cGo">
+			<label for="javascript">Go</label>
+			
+			<input type="checkbox" name="tRuby" id="cRubt">
+			<label for="javascript">Ruby</label>
+		</p>
+		<p> <label for="cLinux">experiencia com linux</label><br>
+			<select multiple>
+				<option value="nem">Nenhuma</option>
+				<option value="bas">Básico</option>
+				<option value="int">Intermediario</option>
+				<option value="avc">Avançado</option>
+			</select>
+		</p>
+		<p> <label for="cOff">experiencia com pacote office</label><br>
+			<select multiple>
+				<option value="nem">Nenhuma</option>
+				<option value="bas">Básico</option>
+				<option value="int">Intermediario</option>
+				<option value="avc">Avançado</option>	
+			</select >
+		</p>
+		<p> <label for="cBi">experiencia com power BI</label><br>
+			<select multiple>
+				<option value="nem">Nenhuma</option>
+				<option value="bas">Básico</option>
+				<option value="int">Intermediario</option>
+				<option value="avc">Avançado</option>	
+			</select>
+		</p>
+		</fieldset>
+	
+	<!-- colocar um lugar para colocar link do git e do linkedin -->
+	
+	</form>
+
+</body>
+</html>
